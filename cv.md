@@ -2,7 +2,7 @@
 *Alla Petrova*
 ## Contact 
 Alla_Petrova@mail.ru
-## Brief information about yourself
+## Brief information about me
 ### Target:
 - *to study*
 - *to work*
