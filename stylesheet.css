@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+  }
+
+span {
+    padding: 2px 2px;
+}
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background: lightseagreen;
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 2px solid grey;
+    padding: 5px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    font-size: 80%;
+    background-color: lightgray;
+}
