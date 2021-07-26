@@ -5,12 +5,7 @@
 body {
     margin: 0;
     font-family: Verdana, sans-serif;
-    text-align: center;
-}
-
-ul {
-    text-align: left;
-}
+  }
 
 span {
     padding: 2px 2px;
@@ -30,9 +25,13 @@ span {
 }
 
 .card {
-    text-align: center;
     border: 2px solid grey;
     padding: 5px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer {
