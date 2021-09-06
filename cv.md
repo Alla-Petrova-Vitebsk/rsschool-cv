@@ -9,9 +9,9 @@
 - *learn new*
 ### Skils:
 - C#
-- HTML
-- CSS
-- JavaScript (Basic)
+- HTML (Basics)
+- CSS (Basics)
+- JavaScript (Basics)
 - SQL
 ### CEFR English Levels:
 A2
