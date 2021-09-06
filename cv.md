@@ -1,7 +1,7 @@
-# SUMMARY
-*Alla Petrova*
+# Alla Petrova
 ## Contact 
-Alla_Petrova@mail.ru
+- **Location:** Belarus, Vitebsk 
+- **e-mail:** Alla_Petrova@mail.ru
 ## Brief information about me
 ### Target:
 - *to study*
