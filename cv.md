@@ -10,7 +10,19 @@
 ### Skils:
 - C#
 - HTML
+- CSS
+- JavaScript (Basic)
 - SQL
-
 ### CEFR English Levels:
 A2
+## Code example:
+**Convert Hash To An Array KATA from CODEWARS:** Convert a hash into an array. Nothing more, Nothing less. 
+{name: 'Jeremy', age: 24, role: 'Software Engineer'}
+should be converted into [["name", "Jeremy"], ["age", 24], ["role", "Software Engineer"]]
+```javascript
+function convertHashToArray(hash){
+  let arr = Object.entries(hash);
+    arr.sort();
+    return arr;
+}
+```
