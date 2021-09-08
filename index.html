@@ -1,76 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
     <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <title>CV Alla Petrova</title>
 </head>
+
 <body>
-    <header>
-        <div class="header">
-            <h1>SUMMARY</h1>
+    <div class="wrapper">
+    <header class="header">
+        <div class="header__wrapper">
+            <img class="header__logo" src="img/favicon.ico" alt="CV">
+            <nav class="header__navigation">
+                <ul class="navigation header__wrapper">
+                    <li> <a href="#"> Contacts </a> </li>
+                    <li> <a href="#"> About me </a> </li>
+                    <li> <a href="#"> Skills </a> </li>
+                    <li> <a href="#"> Education </a> </li>
+                    <li> <a href="#"> Languages </a> </li>
+                    <li> <a href="#"> Code example </a> </li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
-        <div class="flex-container">
-            <section>
+        <div class="main__wrapper">
+            <section class="name">
                 <div>
                     <figure>
-                        <img src="avatar.jpg" alt="avatar" width="100" class="center">
+                        <img src="img/avatar.jpg" alt="avatar" width="100" class="center">
                     </figure>
-                </div>
-                <div>
                     <h2> Alla Petrova</h2>
                 </div>
-                <br>
+
+            </section>
+
+            <section class="contacts">
                 <div>
-                    <h3>Contact</h3>
+                    <h3>Contacts</h3>
                     <ul>
-                    <li> <em>e_mail:</em> Alla_Petrova@mail.ru</li>
+                        <li>
+                            <img src="img/icons8-google-maps.svg" alt="location" width="30" height="30">
+                            Belarus, Vitebsk
+                        </li>
+                        <li>
+                            <img src="img/icons8-email-48.png" alt="e-mail" width="30" height="30> 
+                             <a href="mailto:Alla_Petrova@mail.ru"> Alla_Petrova@mail.ru </a>
+                        </li>
+
                     </ul>
                 </div>
-                <br>
-                <div class="card">
+            </section>
+
+            <section class="about__me">
+                <div>
                     <h3>Brief information about me </h3>
-                    <h4> Target</h4>
+                    <p>
+                        Now I work as a software maintenance specialist. 
+                        My job is to maintain software products used by employees of the organization.
+                        I also have to write SQL queries for database selections.
+                        My work is not related to web development, but I am very interested in this area.
+                    </p>
+                    <h4> My target:</h4>
                     <ul>
                         <li>to study </li>
                         <li>to work </li>
                         <li>learn new</li>
                     </ul>
                 </div>
-                <br>
+
+            </section>
+
+            <section class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li><a href="img/Nekommerch-2-1078439-ORF.jpg"> C# </a> </li>
+                    <li><a href="img/Nekommerch-2-1084187-ORF.jpg"> SQL </a> </li>
+                    <li>HTML (Basics) </li>
+                    <li>CSS (Basics) </li>
+                    <li>JavaScript (Basics) </li>
+                </ul>
+            </section>
+
+            <section class="education">
+                <h3>Education:</h3>
+                <p>Belarusian State University of Informatics and Radioelectronics, 
+                    electronic engineer
+                </p>
+            </section>
+
+            <section class="lanquages">
+                <h3>CEFR English Levels:</h3>
+                <p>A2</p>
+            </section>
+
+            <section class="code_example">
+                <h3> Code example (JavaScript)</h3>
+                <p>
+                    Convert Hash To An Array KATA from CODEWARS: <br>
+                    Convert a hash into an array. Nothing more, Nothing less. <br>
+                    {name: 'Jeremy', age: 24, role: 'Software Engineer'} <br>
+                    should be converted into [["name", "Jeremy"], ["age", 24], ["role", "Software Engineer"]]
+                </p>
                 <div>
-                    <h3>Ckils</h3>
-                    <ul>
-                        <li>C# </li>
-                        <li>HTML </li>
-                        <li>SQL</li>
-                    </ul>
+                    <pre><code>
+                        function convertHashToArray(hash){
+                            let arr = Object.entries(hash);
+                                arr.sort();
+                                return arr;
+                            }
+                        </code></pre>
                 </div>
-                <div class="card">
-                    <h3> Sample code (SQL)</h3>
-                    
-                    <pre>
-select otr.kod as index, spred.name+spred.tel+spred.adress as kontakt
-    from otr full join spr on spr.kod=otr.kod
-        where spr.p1 in ('m1','m2') 
-           order by otr.kod;
-                     </pre>
-                </div>
-                <div>
-                    <h3>Education:</h3>
-                    <p>University</p>
-                </div>
-                <div>
-                    <h3>CEFR English Levels:</h3>
-                    <p>A2</p>
-                </div>
+
+
             </section>
         </div>
-
     </main>
+
     <footer>
         <div class="footer">
             <a href="https://github.com/Alla-Petrova-Vitebsk/rsschool-cv/tree/rsschool-cv-html"> GitHub </a>
@@ -79,5 +131,7 @@ select otr.kod as index, spred.name+spred.tel+spred.adress as kontakt
             <a href="https://rs.school/js-stage0/">Course </a>
         </div>
     </footer>
+</div>
 </body>
+
 </html>
