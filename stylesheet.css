@@ -9,7 +9,6 @@ html {
     box-sizing: inherit;
 }
 
-
 body {
     max-width: 100%;
     font-family: Verdana, sans-serif;
@@ -19,6 +18,28 @@ body {
     list-style: none;
     }
 
+section {
+    box-shadow: -4px 4px 10px 0 #ee7402a6;
+    border-radius: 5% 10%;
+    padding: 20px;
+}   
+
+h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    color:#641E16;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color:#641E16;
+}
+
+p {
+    padding-left: 10px;
+}
+
 .wrapper{
     max-width: 1200px;
     margin: 0 auto;
@@ -26,54 +47,76 @@ body {
 
 .header {
     padding: 10px;
-    /* text-align: center; */
-    background:burlywood;
+    background:#FEF5E7;
     color:maroon;
 }
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
 
 .navigation  a {
     color:maroon;
     text-decoration: none;
 }
 
-.navigation a:hover,
-.navigation a:focus,
-.navigation a:active {
-    opacity: .75;
-}
-
 .navigation li {
     padding: 10px;
 }
 
-
-
-.header__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    } 
-
-
-.flex-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.main-wrapper{
+    padding: 0 20px 0 20px; 
 }
 
-/* .card {
-    border: 2px solid grey;
-    padding: 5px;
-} */
-/* .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-} */
+.column-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.left-column {
+    width: 60%;
+}
+
+.right-column {
+    width: 40%;
+}
+
+.avatar {
+    border: 5px solid #ee7402a6;
+    border-radius: 30%;
+}
+
+
+.square{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #641E16;
+    margin-right: 10px;
+    box-shadow: -4px 4px 10px 0 #ee7402a6;
+}
+.line{
+    height: 2px;
+    background-color: #ee7402a6;
+    box-shadow: -4px 4px 10px 0 #ee7402a6;
+}
 
 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 10px;
-    text-align: center;
     font-size: 80%;
     background-color: lightgray;
 }
+
+
+ a:hover,
+ a:focus,
+ a:active {
+    opacity: .75;
+}
+

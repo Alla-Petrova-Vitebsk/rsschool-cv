@@ -14,124 +14,204 @@
 
 <body>
     <div class="wrapper">
-    <header class="header">
-        <div class="header__wrapper">
-            <img class="header__logo" src="img/favicon.ico" alt="CV">
-            <nav class="header__navigation">
-                <ul class="navigation header__wrapper">
-                    <li> <a href="#"> Contacts </a> </li>
-                    <li> <a href="#"> About me </a> </li>
-                    <li> <a href="#"> Skills </a> </li>
-                    <li> <a href="#"> Education </a> </li>
-                    <li> <a href="#"> Languages </a> </li>
-                    <li> <a href="#"> Code example </a> </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div class="main__wrapper">
-            <section class="name">
-                <div>
-                    <figure>
-                        <img src="img/avatar.jpg" alt="avatar" width="100" class="center">
-                    </figure>
-                    <h2> Alla Petrova</h2>
-                </div>
-
-            </section>
-
-            <section class="contacts">
-                <div>
-                    <h3>Contacts</h3>
-                    <ul>
+        <header class="header">
+            <div class="header-wrapper">
+                <img src="img/favicon.ico" alt="CV" width="30">
+                <nav class="header-navigation">
+                    <ul class="navigation header-wrapper">
                         <li>
-                            <img src="img/icons8-google-maps.svg" alt="location" width="30" height="30">
-                            Belarus, Vitebsk
+                            <a href="#contacts"> Contacts </a>
                         </li>
                         <li>
-                            <img src="img/icons8-email-48.png" alt="e-mail" width="30" height="30> 
-                             <a href="mailto:Alla_Petrova@mail.ru"> Alla_Petrova@mail.ru </a>
+                            <a href="#about"> About me </a>
                         </li>
-
+                        <li>
+                            <a href="#skills"> Skills </a>
+                        </li>
+                        <li>
+                            <a href="#education"> Education </a>
+                        </li>
+                        <li>
+                            <a href="#languages"> Languages </a>
+                        </li>
+                        <li>
+                            <a href="#example"> Code example </a>
+                        </li>
+                        <li>
+                            <a href="#projects"> My recent projects </a>
+                        </li>
                     </ul>
-                </div>
-            </section>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="main-wrapper">
+                <section>
+                    <div class="column-wrapper">
+                        <div>
+                            <figure>
+                                <img class="avatar" src="img/avatar.jpg" alt="avatar" width="100">
+                            </figure>
+                        </div>
+                        <div>
+                            <h1> Alla Petrova</h1>
+                        </div>
+                    </div>
+                </section>
 
-            <section class="about__me">
-                <div>
-                    <h3>Brief information about me </h3>
-                    <p>
-                        Now I work as a software maintenance specialist. 
-                        My job is to maintain software products used by employees of the organization.
-                        I also have to write SQL queries for database selections.
-                        My work is not related to web development, but I am very interested in this area.
-                    </p>
-                    <h4> My target:</h4>
-                    <ul>
-                        <li>to study </li>
-                        <li>to work </li>
-                        <li>learn new</li>
-                    </ul>
-                </div>
+                <section id="contacts">
+                    <div>
+                        <h2>Contacts</h2>
+                        <ul>
+                            <li>
+                                <img src="img/icons8-google-maps.svg" alt="location" width="20" height="20">
+                                <span> Belarus, Vitebsk </span>
+                            </li>
+                            <li>
+                                <img src="img/icons8-email-48.png" alt="e-mail" width="20" height="20">
+                                <a href="mailto:alla_petrova@mail.ru"> alla_petrova@mail.ru </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
 
-            </section>
+                <section id="about">
+                    <div>
+                        <h2>Brief information about me </h2>
+                        <p>
+                            Now I work as a software maintenance specialist. My job is to maintain software products
+                            used by employees of the organization.
+                            I also have to write SQL queries for database selections.
+                        </p>
+                        <p>
+                            My work is not related to web development, but I am very interested in this area.
+                        </p>
+                        <h4> My target:</h4>
+                        <ul>
+                            <li>
+                                <div class="square"></div> 
+                                to study
+                             </li>
+                            <li>
+                                <div class="square"></div>
+                                to work </li>
+                            <li>
+                                <div class="square"></div>
+                                learn new</li>
+                        </ul>
+                    </div>
+                </section>
 
-            <section class="skills">
-                <h3>Skills</h3>
-                <ul>
-                    <li><a href="img/Nekommerch-2-1078439-ORF.jpg"> C# </a> </li>
-                    <li><a href="img/Nekommerch-2-1084187-ORF.jpg"> SQL </a> </li>
-                    <li>HTML (Basics) </li>
-                    <li>CSS (Basics) </li>
-                    <li>JavaScript (Basics) </li>
-                </ul>
-            </section>
+                <section id="skills">
+                    <div>
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>
+                                <div class="square"></div>
+                                <a href="img/Nekommerch-2-1078439-ORF.jpg" target="_blank"> C# </a>
+                            </li>
+                            <li>
+                                <div class="square"></div>
+                                <a href="img/Nekommerch-2-1084187-ORF.jpg" target="_blank"> SQL </a>
+                            </li>
+                            <li>
+                                <div class="square"></div>
+                                <a href="https://app.rs.school/certificate/m5w5902i" target="_blank">HTML (Basics), CSS
+                                    (Basics),
+                                    JavaScript (Basics) </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
 
-            <section class="education">
-                <h3>Education:</h3>
-                <p>Belarusian State University of Informatics and Radioelectronics, 
-                    electronic engineer
-                </p>
-            </section>
+                <section id="education">
+                    <div>
+                        <h2>Education</h2>
+                        <p>Belarusian State University of Informatics and Radioelectronics,
+                            electronic engineer
+                        </p>
+                    </div>
+                </section>
 
-            <section class="lanquages">
-                <h3>CEFR English Levels:</h3>
-                <p>A2</p>
-            </section>
+                <section id="languages">
+                    <div>
+                        <h2>CEFR English Levels</h2>
+                        <p>English Basic User: A2 (Elementary English). <br>
+                            Can understand sentences and frequently used expressions related to areas of most immediate
+                            relevance</p>
+                    </div>
+                </section>
 
-            <section class="code_example">
-                <h3> Code example (JavaScript)</h3>
-                <p>
-                    Convert Hash To An Array KATA from CODEWARS: <br>
-                    Convert a hash into an array. Nothing more, Nothing less. <br>
-                    {name: 'Jeremy', age: 24, role: 'Software Engineer'} <br>
-                    should be converted into [["name", "Jeremy"], ["age", 24], ["role", "Software Engineer"]]
-                </p>
-                <div>
-                    <pre><code>
-                        function convertHashToArray(hash){
-                            let arr = Object.entries(hash);
-                                arr.sort();
-                                return arr;
-                            }
-                        </code></pre>
-                </div>
+                <section id="example">
+                    <div class="column-wrapper">
+                        <div class="left-column">
+                            <h2> Code example (JavaScript)</h2>
+                            <p>
+                                KATA from CODEWARS: <br>
+                                Convert a hash into an array. Nothing more, Nothing less. <br>
+                                {name: 'Jeremy', age: 24, role: 'Software Engineer'} should be converted into [["name",
+                                "Jeremy"], ["age", 24], ["role", "Software Engineer"]]
+                            </p>
+                        </div>
+                        <div class="right-column">
+                            <pre><code>
+    function convertHashToArray(hash){
+        let arr = Object.entries(hash);
+        arr.sort();
+        return arr;
+    }
+                            </code></pre>
+                        </div>
+                    </div>
+                </section>
 
+                <section id="projects">
+                    <div>
+                        <h2>My recent projects</h2>
+                        <div class="column-wrapper">
+                            <div class="left-column">
+                                <h3> Custom video player </h3>
+                                <a href=https://github.com/rolling-scopes-school/tasks/blob/master/tasks/js30/js30-4.md
+                                    target="_blank"> Task from a RS School </a>
+                                <p> Course - JS/FE PRE-SCHOOL (JAVASCRIPT) <br> HTML, CSS, JavaScript</p>
+                            </div>
+                            <div class="right-column">
+                                <a href="https://rolling-scopes-school.github.io/alla-petrova-vitebsk-JSFEPRESCHOOL/custom-video-player"
+                                    target="_blank">
+                                    <img src="img/player.JPG" alt="Custom video player" width="300">
+                                </a>
+                            </div>
+                        </div>
+                        <diV class="line"> </diV>
+                        <div class="column-wrapper">
+                            <div class="left-column">
+                                <h3> Vertical Slider </h3>
+                                <a href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/js30/js30-3.md"
+                                    target="_blank"> Task from a RS School </a>
+                                <p> Course - JS/FE PRE-SCHOOL (JAVASCRIPT) <br> HTML, CSS, JavaScript</p>
+                            </div>
+                            <div class="right-column">
+                                <a href="https://rolling-scopes-school.github.io/alla-petrova-vitebsk-JSFEPRESCHOOL/vertical-slider"
+                                    target="_blank">
+                                    <img src="img/slaider.JPG" alt="Vertical Slider" width="300">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
 
-            </section>
-        </div>
-    </main>
-
-    <footer>
-        <div class="footer">
-            <a href="https://github.com/Alla-Petrova-Vitebsk/rsschool-cv/tree/rsschool-cv-html"> GitHub </a>
-            <span>2021</span>
-            <img src="https://rs.school/images/rs_school_js.svg" alt="rs_school" width="60">
-            <a href="https://rs.school/js-stage0/">Course </a>
-        </div>
-    </footer>
-</div>
+        <footer>
+            <div class="footer">
+                <a href="https://github.com/Alla-Petrova-Vitebsk/rsschool-cv/tree/rsschool-cv-html" target="_blank">
+                    GitHub </a>
+                <p>2021</p>
+                <img src="https://rs.school/images/rs_school_js.svg" alt="rs_school" width="60">
+                <a href="https://rs.school/js/" target="_blank">Course </a>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
