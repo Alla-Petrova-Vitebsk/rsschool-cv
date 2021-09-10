@@ -1,42 +1,175 @@
-* {
+html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 body {
-    margin: 0;
+    max-width: 100%;
     font-family: Verdana, sans-serif;
   }
 
-span {
-    padding: 2px 2px;
+  ul {
+    list-style: none;
+    }
+
+section {
+    box-shadow: -4px 4px 10px 0 #ee7402a6;
+    border-radius: 5% 10%;
+    padding: 20px;
+}   
+
+h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+    color:#641E16;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color:#641E16;
+}
+
+p {
+    padding-left: 10px;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .header {
     padding: 10px;
-    text-align: center;
-    background: lightseagreen;
-    color: white;
+    background:#FEF5E7;
+    color:maroon;
 }
 
-.flex-container {
+.header-wrapper {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.topnav  a {
+    color:maroon;
+    text-decoration: none;
 }
 
-.card {
-    border: 2px solid grey;
-    padding: 5px;
+.topnav li {
+    padding: 10px;
 }
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+  }
+
+.main-wrapper{
+    padding: 0 20px 0 20px; 
+}
+
+.column-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.left-column {
+    width: 60%;
+}
+
+.right-column {
+    width: 40%;
+}
+
+.avatar {
+    border: 5px solid #ee7402a6;
+    border-radius: 30%;
+}
+
+
+.square{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #641E16;
+    margin-right: 10px;
+    box-shadow: -4px 4px 10px 0 #ee7402a6;
+}
+.line{
+    height: 2px;
+    background-color: #ee7402a6;
+    box-shadow: -4px 4px 10px 0 #ee7402a6;
 }
 
 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 10px;
-    text-align: center;
     font-size: 80%;
     background-color: lightgray;
+}
+
+
+ a:hover,
+ a:focus,
+ a:active {
+    opacity: .75;
+}
+
+@media screen and (max-width: 700px) {
+    .wrapper{
+       max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .column-wrapper{
+        flex-direction: column;   
+    }
+
+    .left-column {
+        width: 100%;
+    }
+    
+    .right-column {
+        width: 100%;
+    }
+
+    /* When the screen is less than 700 pixels wide, hide all links. 
+    Show the link that contains should open and close the topnav (.icon) */
+    .topnav a {
+        display: none;
+    }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.
+ This class makes the topnav display the links vertically instead of horizontally */
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    } 
+
 }
