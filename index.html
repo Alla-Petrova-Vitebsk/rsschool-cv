@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="stylesheet.css" rel="stylesheet" type="text/css">
     <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
@@ -17,8 +18,8 @@
         <header class="header">
             <div class="header-wrapper">
                 <img src="img/favicon.ico" alt="CV" width="30">
-                <nav class="header-navigation">
-                    <ul class="navigation header-wrapper">
+                <nav>
+                    <ul class="header-wrapper  topnav" id="myTopnav" >
                         <li>
                             <a href="#contacts"> Contacts </a>
                         </li>
@@ -40,7 +41,13 @@
                         <li>
                             <a href="#projects"> My recent projects </a>
                         </li>
+                        <li>
+                            <a href="javascript:void(0);" class="icon" onclick="responseMenu()">
+                                <i class="fa fa-bars"></i>
+                              </a>
+                        </li>
                     </ul>
+
                 </nav>
             </div>
         </header>
@@ -212,6 +219,6 @@
             </div>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
