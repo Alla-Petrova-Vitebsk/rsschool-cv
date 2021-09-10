@@ -25,7 +25,7 @@ section {
 }   
 
 h1 {
-    font-size: 3em;
+    font-size: 2em;
     text-transform: uppercase;
     color:#641E16;
 }
@@ -120,3 +120,24 @@ p {
     opacity: .75;
 }
 
+@media (max-width: 700px) {
+    .wrapper{
+       max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .column-wrapper{
+        flex-direction: column;   
+    }
+
+    .header-wrapper {
+        flex-direction: column;  
+    } 
+    .left-column {
+        width: 100%;
+    }
+    
+    .right-column {
+        width: 100%;
+    }
+}
