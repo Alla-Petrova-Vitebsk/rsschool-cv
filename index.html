@@ -1,83 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
     <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <title>CV Alla Petrova</title>
 </head>
-<body>
-    <header>
-        <div class="header">
-            <h1>SUMMARY</h1>
-        </div>
-    </header>
-    <main>
-        <div class="flex-container">
-            <section>
-                <div>
-                    <figure>
-                        <img src="avatar.jpg" alt="avatar" width="100" class="center">
-                    </figure>
-                </div>
-                <div>
-                    <h2> Alla Petrova</h2>
-                </div>
-                <br>
-                <div>
-                    <h3>Contact</h3>
-                    <ul>
-                    <li> <em>e_mail:</em> Alla_Petrova@mail.ru</li>
-                    </ul>
-                </div>
-                <br>
-                <div class="card">
-                    <h3>Brief information about me </h3>
-                    <h4> Target</h4>
-                    <ul>
-                        <li>to study </li>
-                        <li>to work </li>
-                        <li>learn new</li>
-                    </ul>
-                </div>
-                <br>
-                <div>
-                    <h3>Ckils</h3>
-                    <ul>
-                        <li>C# </li>
-                        <li>HTML </li>
-                        <li>SQL</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3> Sample code (SQL)</h3>
-                    
-                    <pre>
-select otr.kod as index, spred.name+spred.tel+spred.adress as kontakt
-    from otr full join spr on spr.kod=otr.kod
-        where spr.p1 in ('m1','m2') 
-           order by otr.kod;
-                     </pre>
-                </div>
-                <div>
-                    <h3>Education:</h3>
-                    <p>University</p>
-                </div>
-                <div>
-                    <h3>CEFR English Levels:</h3>
-                    <p>A2</p>
-                </div>
-            </section>
-        </div>
 
-    </main>
-    <footer>
-        <div class="footer">
-            <a href="https://github.com/Alla-Petrova-Vitebsk/rsschool-cv/tree/rsschool-cv-html"> GitHub </a>
-            <span>2021</span>
-            <img src="https://rs.school/images/rs_school_js.svg" alt="rs_school" width="60">
-            <a href="https://rs.school/js-stage0/">Course </a>
-        </div>
-    </footer>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-wrapper">
+                <img src="img/favicon.ico" alt="CV" width="30">
+                <nav>
+                    <ul class="header-wrapper  topnav" id="myTopnav" >
+                        <li>
+                            <a href="#contacts"> Contacts </a>
+                        </li>
+                        <li>
+                            <a href="#about"> About me </a>
+                        </li>
+                        <li>
+                            <a href="#skills"> Skills </a>
+                        </li>
+                        <li>
+                            <a href="#education"> Education </a>
+                        </li>
+                        <li>
+                            <a href="#languages"> Languages </a>
+                        </li>
+                        <li>
+                            <a href="#example"> Code example </a>
+                        </li>
+                        <li>
+                            <a href="#projects"> My recent projects </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="icon" onclick="responseMenu()">
+                                <i class="fa fa-bars"></i>
+                              </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="main-wrapper">
+                <section>
+                    <div class="column-wrapper">
+                        <div>
+                            <figure>
+                                <img class="avatar" src="img/avatar.jpg" alt="avatar" width="100">
+                            </figure>
+                        </div>
+                        <div>
+                            <h1> Alla Petrova</h1>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contacts">
+                    <div>
+                        <h2>Contacts</h2>
+                        <ul>
+                            <li>
+                                <img src="img/icons8-google-maps.svg" alt="location" width="20" height="20">
+                                <span> Belarus, Vitebsk </span>
+                            </li>
+                            <li>
+                                <img src="img/icons8-email-48.png" alt="e-mail" width="20" height="20">
+                                <a href="mailto:alla_petrova@mail.ru"> alla_petrova@mail.ru </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="about">
+                    <div>
+                        <h2>Brief information about me </h2>
+                        <p>
+                            Now I work as a software maintenance specialist. My job is to maintain software products
+                            used by employees of the organization.
+                            I also have to write SQL queries for database selections.
+                        </p>
+                        <p>
+                            My work is not related to web development, but I am very interested in this area.
+                        </p>
+                        <h4> My target:</h4>
+                        <ul>
+                            <li>
+                                <div class="square"></div> 
+                                to study
+                             </li>
+                            <li>
+                                <div class="square"></div>
+                                to work </li>
+                            <li>
+                                <div class="square"></div>
+                                learn new</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="skills">
+                    <div>
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>
+                                <div class="square"></div>
+                                <a href="img/Nekommerch-2-1078439-ORF.jpg" target="_blank"> C# </a>
+                            </li>
+                            <li>
+                                <div class="square"></div>
+                                <a href="img/Nekommerch-2-1084187-ORF.jpg" target="_blank"> SQL </a>
+                            </li>
+                            <li>
+                                <div class="square"></div>
+                                <a href="https://app.rs.school/certificate/m5w5902i" target="_blank">HTML (Basics), CSS
+                                    (Basics),
+                                    JavaScript (Basics) </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="education">
+                    <div>
+                        <h2>Education</h2>
+                        <p>Belarusian State University of Informatics and Radioelectronics,
+                            electronic engineer
+                        </p>
+                    </div>
+                </section>
+
+                <section id="languages">
+                    <div>
+                        <h2>CEFR English Levels</h2>
+                        <p>English Basic User: A2 (Elementary English). <br>
+                            Can understand sentences and frequently used expressions related to areas of most immediate
+                            relevance</p>
+                    </div>
+                </section>
+
+                <section id="example">
+                    <div class="column-wrapper">
+                        <div class="left-column">
+                            <h2> Code example (JavaScript)</h2>
+                            <p>
+                                KATA from CODEWARS: <br>
+                                Convert a hash into an array. Nothing more, Nothing less. <br>
+                                {name: 'Jeremy', age: 24, role: 'Software Engineer'} should be converted into [["name",
+                                "Jeremy"], ["age", 24], ["role", "Software Engineer"]]
+                            </p>
+                        </div>
+                        <div class="right-column">
+                            <pre><code>
+    function convertHashToArray(hash){
+        let arr = Object.entries(hash);
+        arr.sort();
+        return arr;
+    }
+                            </code></pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="projects">
+                    <div>
+                        <h2>My recent projects</h2>
+                        <div class="column-wrapper">
+                            <div class="left-column">
+                                <h3> Custom video player </h3>
+                                <a href=https://github.com/rolling-scopes-school/tasks/blob/master/tasks/js30/js30-4.md
+                                    target="_blank"> Task from a RS School </a>
+                                <p> Course - JS/FE PRE-SCHOOL (JAVASCRIPT) <br> HTML, CSS, JavaScript</p>
+                            </div>
+                            <div class="right-column">
+                                <a href="https://rolling-scopes-school.github.io/alla-petrova-vitebsk-JSFEPRESCHOOL/custom-video-player"
+                                    target="_blank">
+                                    <img src="img/player.JPG" alt="Custom video player" width="250">
+                                </a>
+                            </div>
+                        </div>
+                        <diV class="line"> </diV>
+                        <div class="column-wrapper">
+                            <div class="left-column">
+                                <h3> Vertical Slider </h3>
+                                <a href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/js30/js30-3.md"
+                                    target="_blank"> Task from a RS School </a>
+                                <p> Course - JS/FE PRE-SCHOOL (JAVASCRIPT) <br> HTML, CSS, JavaScript</p>
+                            </div>
+                            <div class="right-column">
+                                <a href="https://rolling-scopes-school.github.io/alla-petrova-vitebsk-JSFEPRESCHOOL/vertical-slider"
+                                    target="_blank">
+                                    <img src="img/slaider.JPG" alt="Vertical Slider" width="250">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <a href="https://github.com/Alla-Petrova-Vitebsk/rsschool-cv/tree/rsschool-cv-html" target="_blank">
+                    GitHub </a>
+                <p>2021</p>
+                <img src="https://rs.school/images/rs_school_js.svg" alt="rs_school" width="60">
+                <a href="https://rs.school/js/" target="_blank">Course </a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
